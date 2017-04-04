@@ -50,7 +50,23 @@ A kitchen has many items.
     rack, and cinnamon, nutmeg, and vanilla on another shelf.
 
 ```json
-<!-- your answer here -->
+<!--
+
+myObj =
+{"kitchen": {
+  "cupboard": {
+    "dishes": [ "bowls", "plates" ]
+  },
+  "electric stove": {
+    "heating element": [ "small", "medium", "large", "extra large" ]
+  },
+  "spice rack": {
+    "shelfOne": ["chives", "lemon grass", "mint" ],
+    "shelfTwo": ["cinnamon", "nutmeg", "vanilla"]
+  },
+}
+}
+ -->
 ```
 
 ## Modeling Data Using JSON: Part II
@@ -62,7 +78,28 @@ delicious apple.
 Copy the JSON that you wrote for the previous question and include the new information about the kitchen.
 
 ```json
-<!-- your answer here -->
+<!--
+myObj = {
+  "kitchen": {
+    "cupboard": {
+      "dishes": [ "bowls", "plates" ]
+    },
+    "electricStove": {
+      "heatingElement": [ "small", "medium", "large", "extra large" ]
+    },
+    "spiceRack": {
+      "shelfOne": ["chives", "lemon grass", "mint" ],
+      "shelfTwo": ["cinnamon", "nutmeg", "vanilla"]
+    },
+    "fruitBasket": [
+      { "fruit":"apple", "type":"Fuji", "QTY":2 },
+      { "fruit":"apple", "type":"Gala", "QTY":7 },
+      { "fruit":"apple", "type":"Golden delicious", "QTY":1 }
+    ]
+  }
+}
+}
+ -->
 ```
 
 ## JSON Methods
@@ -70,7 +107,16 @@ Copy the JSON that you wrote for the previous question and include the new infor
 Can you write a method in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+<!--
+I'm not entirely sure, but this would have to go somewhere in the array?
+
+Property:
+goldenDeliciousApple
+
+Value:
+function() {return this.QTY + " " + this.type + " " + this.fruit;}
+
+-->
 ```
 
 ## JSON Comments
@@ -78,5 +124,7 @@ Can you write a method in the JSON that you wrote above?
 Can you write comments in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+<!-- From what I've read online, you cannot comment within JSON.  stackoverflow
+says that JSON "should be all data, and if you include a comment, then it will
+be data, too" -->
 ```
